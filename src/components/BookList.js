@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {ThemeContext} from '../contexts/ThemeContext';
 
 class BookList extends Component {
+    // below using context type to get data from the context , can also use context consumer
   static contextType = ThemeContext;
        render() { 
           const {isLightTheme,light,dark} = this.context;
